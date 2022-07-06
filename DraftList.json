@@ -1,10 +1,10 @@
-DRAFT_LIST :[{
+{ DRAFT_LIST :[{
 DRAFT_NAME : "",
 DRAFT_CREATOR : "",
 DRAFT_ID: "",
 DATE: 0,
 PACK_LIST: []
-}]
+}],
 
 
 PACKLIST:[{
@@ -26,3 +26,4 @@ SC_VALUE : 0,
 K_CARDS : []
 
 }]
+}
