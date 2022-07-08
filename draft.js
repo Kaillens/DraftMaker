@@ -1,11 +1,13 @@
-import * as data from './DraftList.json';
-const {draftlist} = data;
+fetch('./Data.json')
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.log(error));
 
 const btn = document.getElementById('StartDraft');
 btn.addEventListener('click', GetListDraft);
 
 function GetListDraft(){
-  console.log(draflist);
+
   
 }
 
