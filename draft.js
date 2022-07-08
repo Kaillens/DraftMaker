@@ -1,13 +1,17 @@
+let List_Draft = {"DraftList" : []}
 fetch('./DraftList.json')
   .then(response => response.json())
-  .then(data => console.log(data))
+  .then(data => {
+     List_Draft = data;
+
+})
   .catch(error => console.log(error));
 
 const btn = document.getElementById('StartDraft');
 btn.addEventListener('click', GetListDraft);
 
 function GetListDraft(){
-
+  console.log(List_Draft)
   
 }
 
