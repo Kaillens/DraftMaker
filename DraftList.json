@@ -1,13 +1,12 @@
-{ "DRAFT_LIST" :{
+{  "DRAFT_LIST": [{ 
+ 
+ DRAFT_INFO:{
 DRAFT_NAME : "",
 DRAFT_CREATOR : "",
 DRAFT_ID: "",
 DATE: 0,
-PACK_LIST: []
-},
-
-
-"PACKLIST":[
+PACK_LIST: [],
+PACK_LIST_INFO : [
   {
 PACK_ID: "",
 PACK_QTY: 0,
@@ -26,6 +25,12 @@ SC_CARDS: [],
 SC_VALUE : 0,
 K_CARDS : []
 
+}]
+ }
+}]
+
+
+
+
 }
-]
 }
