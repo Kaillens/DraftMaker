@@ -1,4 +1,4 @@
-{ DRAFT_LIST :[{
+{ "DRAFT_LIST" :[{
 DRAFT_NAME : "",
 DRAFT_CREATOR : "",
 DRAFT_ID: "",
@@ -7,7 +7,7 @@ PACK_LIST: []
 }],
 
 
-PACKLIST:[{
+"PACKLIST":[{
 PACK_ID: "",
 PACK_QTY: 0,
 PACK_DISTRIBUTION: [],
