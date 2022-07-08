@@ -7,8 +7,11 @@ fetch('./DraftList.json')
 })
   .catch(error => console.log(error));
 
+document.addEventListener("DOMContentLoaded", function(){
 const btn = document.getElementById('StartDraft');
 btn.addEventListener('click', GetListDraft);
+});
+
 
 function GetListDraft(){
   console.log(List_Draft)
