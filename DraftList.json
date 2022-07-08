@@ -1,36 +1,51 @@
-{  "DRAFT_LIST": [{ 
- 
- DRAFT_INFO:{
-DRAFT_NAME : "",
-DRAFT_CREATOR : "",
-DRAFT_ID: "",
-DATE: 0,
-PACK_LIST: [],
-PACK_LIST_INFO : [
-  {
-PACK_ID: "",
-PACK_QTY: 0,
-PACK_DISTRIBUTION: [],
-R_CARDS: [],
-R_VALUE: 0,
-SP_CARDS: [],
-SP_VALUE: 0,
-SPP_CARDS: [],
-SPP_VALUE: 0,
-SR_CARDS : [],
-SR_VALUE: 0,
-UR_CARDS: [],
-UR_VALUE: 0,
-SC_CARDS: [],
-SC_VALUE : 0,
-K_CARDS : []
-
-}]
- }
-}]
-
-
-
-
-}
+{
+   "DRAFT_LIST":[
+      {
+         "DRAFT_INFO":{
+            "DRAFT_NAME":"",
+            "DRAFT_CREATOR":"",
+            "DRAFT_ID":"",
+            "DATE":0,
+            "PACK_LIST":[
+               
+            ],
+            "PACK_LIST_INFO":[
+               {
+                  "PACK_ID":"",
+                  "PACK_QTY":0,
+                  "PACK_DISTRIBUTION":[
+                     
+                  ],
+                  "R_CARDS":[
+                     
+                  ],
+                  "R_VALUE":0,
+                  "SP_CARDS":[
+                     
+                  ],
+                  "SP_VALUE":0,
+                  "SPP_CARDS":[
+                     
+                  ],
+                  "SPP_VALUE":0,
+                  "SR_CARDS":[
+                     
+                  ],
+                  "SR_VALUE":0,
+                  "UR_CARDS":[
+                     
+                  ],
+                  "UR_VALUE":0,
+                  "SC_CARDS":[
+                     
+                  ],
+                  "SC_VALUE":0,
+                  "K_CARDS":[
+                     
+                  ]
+               }
+            ]
+         }
+      }
+   ]
 }
