@@ -17,7 +17,7 @@ function GetListDraft(){
  let Draft_ID = document.getElementById('DraftSelect').value;
  
   // Look for Draft
- let Draft_Find = List_Draft.find(el =>{
+ let Draft_Find = List_Draft.DRAFT_LIST.find(el =>{
  if(el.DRAFT_INFO.DRAFT_ID == Draft_ID){
  return true;
  }
