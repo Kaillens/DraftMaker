@@ -21,17 +21,19 @@ function GetListDraft(){
  if(el.DRAFT_INFO.DRAFT_ID == Draft_ID){
  return true;
  }
+ })
  
  if(Draft_Find != null){
  
- Draft_Rarity(Draft_Find.DRAFT_INFO)
+ let Drafted = Draft_Rarity(Draft_Find.DRAFT_INFO);
+   download(Draft_Find.DRAFT_INFO.DRAFT_NAME, Drafted)
  }
    
- })
+ }
   
   
   
-}
+
 
 function Draft_Rarity(DRAFT_INFO){
  
@@ -69,7 +71,7 @@ function Draft_Rarity(DRAFT_INFO){
  
  })
   
-  
+  return ResultArray;
   
 }
 
@@ -342,3 +344,43 @@ function FIND_RARITY(PackInfo, Rarity){
     }
     return ""
   }
+  
+ function download(filename, cardArray) {
+   
+     let text = "";
+     let mainArray = [];
+     let ExArray = [];
+   
+      cardArray.map(el =>{
+      if(el.length > 2 && el[0] == "E" && el[1] == "X"){
+      ExArray.push(el.substring(2));
+      }else(){
+      mainArray.push(el)
+      }
+      })
+   
+    text = "#created by ..." +"\r\n" + "#main" +"\r\n";
+   
+    mainArray.map(el =>{
+    text = text + el +"\r\n"
+    })
+   
+    text = text + "#extra" +"\r\n"
+   
+    ExArray.map(el =>{
+    text = text + el +"\r\n"
+    })
+   
+    var element = document.createElement('a');
+    element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+    element.setAttribute('download', filename);
+
+    element.style.display = 'none';
+    document.body.appendChild(element);
+
+    element.click();
+
+    document.body.removeChild(element);
+}
+
+
