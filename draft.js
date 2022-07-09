@@ -22,10 +22,11 @@ function GetListDraft(){
  return true;
  }
  })
- 
+ console.log(Draft_Find)
  if(Draft_Find != null){
  
  let Drafted = Draft_Rarity(Draft_Find.DRAFT_INFO);
+   console.log(Drafted)
    download(Draft_Find.DRAFT_INFO.DRAFT_NAME, Drafted)
  }
    
@@ -62,15 +63,16 @@ function Draft_Rarity(DRAFT_INFO){
    ArrayRarity.push(FIND_RARITY(PACK, el))
    })
    }
+    console.log(ArrayRarity)
       ArrayRarity.map(el => {                           
     ResultArray.push(FindCard_For_Rarity(PACK, el))})
- 
+    
 
                               
  
  
  })
-  
+  console.log(ResultArray)
   return ResultArray;
   
 }
