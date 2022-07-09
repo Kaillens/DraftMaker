@@ -356,7 +356,7 @@ function FIND_RARITY(PackInfo, Rarity){
       cardArray.map(el =>{
       if(el.length > 2 && el[0] == "E" && el[1] == "X"){
       ExArray.push(el.substring(2));
-      }else(){
+      }else{
       mainArray.push(el)
       }
       })
