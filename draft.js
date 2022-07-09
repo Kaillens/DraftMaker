@@ -329,7 +329,7 @@ function FIND_RARITY(PackInfo, Rarity){
     
     if(rarity == "C"){
         return PACKINFO.C_CARDS[Math.floor(Math.random() * (PACKINFO.C_CARDS.length - 0))];
-    }lse if(rarity == "SP"){
+    }else if(rarity == "SP"){
               return PACKINFO.SP_CARDS[Math.floor(Math.random() * (PACKINFO.SP_CARDS.length - 0))];
     }else if(rarity == "SSP"){
              return PACKINFO.SSP_CARDS[Math.floor(Math.random() * (PACKINFO.SSP_CARDS.length - 0))]; 
